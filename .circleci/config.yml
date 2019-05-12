@@ -1,6 +1,8 @@
+version: 2
 jobs:
-  python:
-    version: 3.5.2
+  python-3.5:
+    docker:
+      - image: circleci/python:3.5
 
 dependencies:
   override:
