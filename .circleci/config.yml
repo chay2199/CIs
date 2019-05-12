@@ -12,7 +12,9 @@ jobs:
   steps:
     - run:
         name: dependencies
-        command: pip install -r requirements.txt
+        command: |
+          pip install \
+          -r requirements.txt
   
   
 
