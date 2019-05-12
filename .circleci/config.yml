@@ -8,7 +8,7 @@ jobs:
       - run:
           name: dependencies
           command: |
-	  pip install --user \
+          pip install --user \
           -r requirements.txt
 
 workflows:
