@@ -1,0 +1,11 @@
+#!/mnt/1b42bb5b-78b7-eb4d-b30f-9cc7b429dc52/CIs/pythonCI/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from pip._internal import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

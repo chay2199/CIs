@@ -1,9 +1,11 @@
-version: 2.1
+machine:
+  python:
+    version: 3.5.5
 
-orbs:
-    hello: circleci/hello-build@0.0.7 # uses the circleci/buildpack-deps Docker image
+dependencies:
+  override:
+    - pip install -r requirements.txt
 
-workflows:
-    "Hello Workflow":
-        jobs:
-          - hello/hello-build
+test:
+  override:
+    - nosetests tests/math-test.py
