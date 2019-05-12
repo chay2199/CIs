@@ -9,10 +9,10 @@ jobs:
       override:
         - nosetests tests/math-test.py
     
-    steps:
-      - run:
-          name: dependencies
-          command: pip install -r requirements.txt
+  steps:
+    - run:
+        name: dependencies
+        command: pip install -r requirements.txt
   
   
 
