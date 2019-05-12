@@ -1,13 +1,11 @@
-version: 2
 jobs:
-  python-3.5:
-    docker:
-      - image: circleci/python:3.5.5
+  python:
+    version: 3.5.2
 
-      - run:
-          name: dependencies
-          command: |
-            pip install-r requirements.txt
+dependencies:
+  override:
+    - pip install -r requirements.txt
+
 test:
   override:
     - nosetests tests/math-test.py
