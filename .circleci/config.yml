@@ -14,6 +14,12 @@ jobs:
           command: |
             source pythonCI/bin/activate
             pip install --user -r requirements.txt
+          environment:
+            COALA_OUTPUT: "reports/junit/bear.xml"
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
       # Step 3: run linter and tests
     test:
       override:

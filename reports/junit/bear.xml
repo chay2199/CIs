@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite id="0" name="PEP8Bear" failures="1">
+<testcase id="0" name="autopep8">
+	<failure message="The code does not comply to PEP8">The code does not comply to PEP8, Line:1
+	</failure>
+</testcase>
+</testsuite>
+
